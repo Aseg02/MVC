@@ -12,14 +12,14 @@
     <div class="wrapper">
         <header>
             <h1>
-                <a href="/">home</a>
+                <a href="./partials/homepage.handlebars">home</a>
             </h1>
             <nav>
                 {{#if loggedIn}}
-                <a href="/dashboard">dashboard</a>
+                <a href="./partials/dashboard.handlebars">dashboard</a>
                 <button id="logout" class="btn-no-style logout">logout</button>
                 {{else}}
-                <a href="/login">login</a>
+                <a href="./partials/signup.handlebars">login</a>
                 {{/if}}
             </nav>
         </header>
